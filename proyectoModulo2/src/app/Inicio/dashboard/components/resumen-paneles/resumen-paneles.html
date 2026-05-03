@@ -1,0 +1,159 @@
+<div class="fila-paneles">
+  <div class="panel">
+    <div class="cabecera-panel">
+      <span><i class="fa-solid fa-users color-blanco"></i></span>
+      <h2 class="titulo-panel">Usuarios por Tipo</h2>
+    </div>
+    <div class="cuerpo-panel">
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Normal</span>
+          <span class="cantidad-barra color-azul">{{totalUsuariosNormales}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-azul" [style.width.%]="porcentajeUsuariosNormales"></div>
+        </div>
+        <span class="porcentaje-barra">{{porcentajeUsuariosNormales}}%</span>
+      </div>
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Premium</span>
+          <span class="cantidad-barra color-amarillo">{{totalUsuariosPremium}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-amarillo" [style.width.%]="porcentajeUsuariosPremium"></div>
+        </div>
+        <span class="porcentaje-barra">{{porcentajeUsuariosPremium}}%</span>
+      </div>
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Concurrente</span>
+          <span class="cantidad-barra color-morado">{{totalUsuariosConcurrentes}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-morado" [style.width.%]="porcentajeUsuariosConcurrentes"></div>
+        </div>
+        <span class="porcentaje-barra">{{porcentajeUsuariosConcurrentes}}%</span>
+      </div>
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Admin</span>
+          <span class="cantidad-barra color-rojo">{{totalUsuariosAdmins}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-rojo" [style.width.%]="porcentajeUsuariosAdmins"></div>
+        </div>
+        <span class="porcentaje-barra">{{porcentajeUsuariosAdmins}}%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="cabecera-panel">
+      <span><i class="fa-solid fa-box-open"></i></span>
+      <h2 class="titulo-panel">Paquetes por Tipo</h2>
+    </div>
+    <div class="cuerpo-panel">
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Alimenticio</span>
+          <span class="cantidad-barra color-verde">{{totalEnviosAlimenticios}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-verde" [style.width.%]="porsentajeEnviosAlimenticios"></div>
+        </div>
+        <span class="porcentaje-barra">{{porsentajeEnviosAlimenticios}}%</span>
+      </div>
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">No Alimenticio</span>
+          <span class="cantidad-barra color-azul">{{totalEnviosNoalimenticios}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-azul" [style.width.%]="porsentajeEnviosNoalimenticios"></div>
+        </div>
+        <span class="porcentaje-barra">{{porsentajeEnviosNoalimenticios}}%</span>
+      </div>
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Carta</span>
+          <span class="cantidad-barra color-amarillo">{{totalEnviosCartas}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-amarillo" [style.width.%]="porsentajeEnviosCartas"></div>
+        </div>
+        <span class="porcentaje-barra">{{porsentajeEnviosCartas}}%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="cabecera-panel">
+      <span><i class="fa-solid fa-helmet-safety"></i></span>
+      <h2 class="titulo-panel">Trabajadores por Cargo</h2>
+    </div>
+    <div class="cuerpo-panel">
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Administrador</span>
+          <span class="cantidad-barra color-azul">{{totalAdministradores}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-azul" [style.width.%]="porcentajeAdmins"></div>
+        </div>
+        <span class="porcentaje-barra">{{porcentajeAdmins}}%</span>
+      </div>
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Conductor</span>
+          <span class="cantidad-barra color-verde">{{totalConductores}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-verde" [style.width.%]="porcentajeConductores"></div>
+        </div>
+        <span class="porcentaje-barra">{{porcentajeConductores}}%</span>
+      </div>
+      <div class="fila-barra">
+        <div class="meta-barra">
+          <span class="nombre-barra">Manipulador</span>
+          <span class="cantidad-barra color-naranja">{{totalManipuladoresPaquetes}}</span>
+        </div>
+        <div class="pista-barra">
+          <div class="relleno-barra barra-naranja" [style.width.%]="porcentajeManipuladores"></div>
+        </div>
+        <span class="porcentaje-barra">{{porcentajeManipuladores}}%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-estado">
+    <div class="cabecera-panel">
+      <span><i class="fa-solid fa-bars-progress"></i></span>
+      <h2 class="titulo-panel">Estado de Entregas</h2>
+    </div>
+    <div class="cuerpo-panel estado-cuerpo">
+      <div class="circulo-estado"
+           [style.--p-verde]="porsentajeEnviosAtiempo"
+           [style.--p-naranja]="porsentajeEnviosRetraso">
+        <div class="numero-circulo">{{porsentajeEnviosAtiempo}}%</div>
+        <div class="label-circulo">a tiempo</div>
+      </div>
+      <div class="leyenda-estado">
+        <div class="item-leyenda">
+          <span class="punto-leyenda" [style.width.%]="porsentajeEnviosAtiempo"></span>
+          <div>
+            <div class="nombre-leyenda">A Tiempo</div>
+            <div class="valor-leyenda color-verde">{{totalEnviosAtiempo}}</div>
+          </div>
+        </div>
+        <div class="item-leyenda">
+          <span class="punto-leyenda" [style.width.%]="porsentajeEnviosRetraso"></span>
+          <div>
+            <div class="nombre-leyenda">Con Retraso</div>
+            <div class="valor-leyenda color-naranja">{{totalEnviosRestraso}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
